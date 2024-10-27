@@ -10,7 +10,8 @@
 #7 consecutive losses.
 #10 consecutive losses.
 #Risk per Trade: This is the percentage of the total capital that can be risked on each trade.
- 
+# remaining capital = (1-r)^n, r is risk per trade, n is the number of cons looses 
+# expected return = W * r * R - (1-R) * R, W is win propb, R is Win/loss return ratio (e.g., 2 for a 2:1 return ratio).
 import pandas as pd
 import numpy as np
 
